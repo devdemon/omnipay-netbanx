@@ -84,7 +84,7 @@ abstract class HostedAbstractRequest extends AbstractRequest
             json_encode($data),
             array(
                 'auth' => array($this->getKeyId(), $this->getKeyPassword(), 'Basic'),
-                'proxy'   => 'http://localhost:8888'
+                //'proxy'   => 'http://localhost:8888'
             )
         );
 
